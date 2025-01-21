@@ -7,6 +7,7 @@ let valid;
 function getInput() {
     console.log("What function do you want to perform?")
     console.log("Type 'exit' to quit")
+    //remove Number() from userChoice
     userChoice = Number(prompt(`1: Add, 2: Subtract, 3: Multiply 4: Divide, 5: Exponent: `))
     return userChoice;
 }
@@ -51,6 +52,8 @@ function math(userChoice, num1, num2){
         console.log('Invalid user choice')
         return
     } */
+
+    // change userchoice to Number(userChoice)
     if(userChoice === 1) {
         let sum = num1 + num2;
         console.log(`The sum of ${num1} and ${num2} is ${sum}`);
